@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+
+  padding: 15px 40px;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+}
+
+
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 10px 0;
+  margin-top: 8px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  min-width: 150px;
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+  transition: background 0.2s;
+}
+
+.dropdown-menu li:hover {
+  background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown i {
+  margin-left: 5px;
+}
+
+.new-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color:blue;
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons a:hover {
+    cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.buttons button {
+  background:black;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: black;
+}
+.menu-icon {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+.parent
+{
+    text-align: center;
+    margin-top: 150px;
+}
+.parent h1{
+    font-size: 50px;
+}
+.parent p{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.container {
+            /* max-width: 1200px; */
+            /* width: 100%; */
+            gap:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 160px;
+        }
+        
+        
+.pricing-table {
+            /* display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; */
+              display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+            gap: 50px;
+            /* overflow: hidden; */
+            /* margin-left: 450px; */
+        }
+        
+.pricing-plan {
+            background: white;
+            border-radius: 5px;
+            border:2px solid gray;
+            /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+            padding: 35px 30px;
+            flex: 1;
+            color:gray;
+            min-width: 200px;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;     
+           }
+        
+        
+.plan-name {
+            font-size: 20px;
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+        
+.plan-price {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+        
+.plan-price .free {
+            color: black;
+        }
+        
+.plan-price .dollar {
+            font-size: 20px;
+            margin-right: 5px;
+            vertical-align: super;
+        }
+        
+.plan-features {
+            list-style-type: none;
+            margin-bottom: 30px;
+        }
+        
+.plan-features li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            color: #4a5568;
+        }
+        
+.plan-features li i {
+            color: gray;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+.plan-button {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: auto;
+            border:2px solid black;
+        }
+.plan-button-new{
+            display: block;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: auto;
+        }
+        
+.plan-button:hover {
+            background: #3a7bc8;
+        }
+        
+.enterprise .plan-button {
+            background: #6b46c1;
+        }
+        
+.enterprise .plan-button:hover {
+            background: #553c9a;
+        }
+        
+.popular {
+            position: relative;
+            border: 2px solid #4a90e2;
+        }
+        footer{
+    text-align: center;
+    margin-top: 50px;
+    color:gray;
+    line-height: 1.6;
+}
+        
+        
+@media (max-width: 500px) {
+            .pricing-table {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;  
+
+                }
+            
+            .pricing-plan {
+                 width:200px;
+            }
+        }
+@media (max-width: 500px) {
+  .nav-links,
+  .buttons {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

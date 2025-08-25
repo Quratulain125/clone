@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+
+  padding: 15px 40px;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+}
+
+
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 10px 0;
+  margin-top: 8px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  min-width: 150px;
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+  transition: background 0.2s;
+}
+
+.dropdown-menu li:hover {
+  background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown i {
+  margin-left: 5px;
+}
+
+.new-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color:blue;
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons a:hover {
+    cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.buttons button {
+  background:black;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: black;
+}
+.menu-icon {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+.parent
+{
+    text-align: center;
+    margin-top: 80px;
+    line-height: 1.6;
+}
+.parent h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.parent p{
+    letter-spacing: 2px;
+}
+
+
+.course-card1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 300px;
+}
+
+.image-container1 {
+    flex: 1;
+}
+
+.image-container1 img {
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.text-container1 {
+    flex: 2;
+    padding: 20px;
+}
+
+.course-title1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-info1 {
+    font-size: 14px;
+    color: #888;
+}
+
+.course-author1 {
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.course-card2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 300px;
+}
+
+.image-container2 {
+    flex: 1;
+}
+
+.image-container2 img {
+    border-radius: 5px;
+    width: 450px;
+    height: 300px;
+}
+
+.text-container2 {
+    flex: 2;
+    padding: 20px;
+}
+
+.course-title2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-info2 {
+    font-size: 14px;
+    color: #888;
+}
+
+.course-author2 {
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.course-card3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 300px;
+}
+
+.image-container3 {
+    flex: 1;
+}
+
+.image-container3 img {
+    border-radius: 5px;
+    width: 450px;
+    height: 300px;
+}
+
+.text-container3 {
+    flex: 2;
+    padding: 20px;
+}
+
+.course-title3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-info3 {
+    font-size: 14px;
+    color: #888;
+}
+
+.course-author3 {
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.course-card4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 300px;
+}
+
+.image-container4 {
+    flex: 1;
+}
+
+.image-container4 img {
+    border-radius: 5px;
+    width: 450px;
+    height: 300px;
+}
+
+.text-container4 {
+    flex: 2;
+    padding: 20px;
+}
+
+.course-title4 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-info4 {
+    font-size: 14px;
+    color: #888;
+}
+
+.course-author4 {
+    margin-top: 40px;
+    margin-right: 10px;
+}
+ footer{
+    text-align: center;
+    margin-top: 50px;
+    color:gray;
+    line-height: 1.6;
+}
+
+@media(max-width: 501px) {
+  .nav-links,
+  .buttons {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .course-card1,.course-card2,.course-card3,.course-card4
+  {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  
+}

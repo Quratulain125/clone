@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+
+  padding: 15px 40px;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+}
+
+
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 10px 0;
+  margin-top: 8px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  min-width: 150px;
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+  transition: background 0.2s;
+}
+
+.dropdown-menu li:hover {
+  background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown i {
+  margin-left: 5px;
+}
+
+.new-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color:blue;
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons a:hover {
+    cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.buttons button {
+  background:black;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: black;
+}
+.menu-icon {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+.about
+{
+    text-align: center;
+    margin-top: 80px;
+    line-height: 1.7;
+}
+.about h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.hero
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6;
+    margin-top: 50px;
+}
+.hero h1{
+    margin-left: 550px;
+    text-align: left;
+}
+.hero p{
+        margin-left: 550px;
+        font-size: 15px;
+}
+.image
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    gap:100px;
+}
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid gray;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px gray;
+}
+       footer{
+    text-align: center;
+    margin-top: 50px;
+    color:gray;
+    line-height: 1.6;
+}
+@media(max-width: 501px) {
+  .nav-links,
+  .buttons {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .hero h1
+  {
+    flex-direction: wrap;
+    margin-left: 20px;
+  }
+   .hero p
+  {
+    flex-direction: wrap;
+    margin-left: 20px;
+  }
+  .image{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
